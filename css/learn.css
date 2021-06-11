@@ -1,0 +1,41 @@
+.learn_close{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f3f3f3;
+    align-items: center;
+}
+
+.learn_close div{
+    display: flex;
+    align-items: center;
+}
+
+.learn_close p{
+    display: inline;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.learn_close .fa-info-circle{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.learn_close .fa-times{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.learn_close a{
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.learn_close a:hover{
+    text-decoration: underline;
+}
