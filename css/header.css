@@ -1,0 +1,54 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    height: 25px;
+    width: auto;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0px;
+}
+
+header li{
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    padding: 15px 10px 10px 10px;
+}
+
+header a{
+    text-decoration: none;
+    color:black;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 0.8rem;
+}
+
+header li:hover a{
+    border-bottom: 3px solid black;
+}
+
+header li:active{
+    border: 1px dashed black;
+}
+
+.icon-header{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.fa-chevron-down{
+    font-size: 0.75rem; 
+}
+
+@media only screen and (max-width: 1082px) {
+    header {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
