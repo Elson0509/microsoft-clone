@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
     <title>Microsoft - Oficial Home Page</title>
 </head>
 <body>
@@ -88,5 +87,56 @@
             </ul>
         </div>
     </header>
+    <section class="carousel">
+        <div class="slideshow-container">
+            <div class="mySlides fade carousel-img-1">
+              <img src="imgs/carousel1.png" style="width:100%">
+              <div class="text">
+                  <div></div>
+                  <div>
+                    <h2>Deals Unlocked</h2>
+                    <p>Score great deals on select Xbox games, Xbox Game Pass Ultimate, and more. Sale ends 6/17.</p>
+                    <button class="shop-now-button">
+                        <div class="shop-now-button-left">
+                            Shop now    
+                        </div>
+                        <div class="shop-now-button-right">
+                            >
+                        </div>
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides fade carousel-img-2">
+              <img src="imgs/carousel2.png" style="width:100%">
+              <div class="text">
+                <div class="first">
+                  <h2>Save $550</h2>
+                  <p>Stand out from the ordinary and save on select Surface Pro 7 with Intel i5 + Type Cover + Surface Pen</p>
+                  <button class="shop-now-button shop-now-button-dark">
+                      <div class="shop-now-button-left">
+                          Shop now    
+                      </div>
+                      <div class="shop-now-button-right">
+                          >
+                      </div>
+                  </button>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <div class="prev" onclick="plusSlides(-1)">
+                <a>&#10094;</a>
+            </div>
+            <div class="next" onclick="plusSlides(1)">
+                <a>&#10095;</a>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
