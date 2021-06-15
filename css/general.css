@@ -5,48 +5,8 @@ body{
     font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.show-945{
-    display: none;
-}
-.show-865{
-    display: none;
-}
-.show-859{
-    display: none;
-}
-
 @media only screen and (max-width: 1082px) {
     body {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width: 945px) {
-    .hide-945{
-        display: none;
-    }
-
-    .show-945{
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 865px) {
-    .hide-865{
-        display: none;
-    }
-
-    .show-865{
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 859px) {
-    .hide-859{
-        display: none;
-    }
-
-    .show-859{
-        display: block;
     }
 }

@@ -87,11 +87,13 @@
             </ul>
         </div>
     </header>
-    <section class="carousel">
+    <!-- carousel -->
+    <section>
         <div class="slideshow-container">
             <div class="mySlides fade carousel-img-1">
-              <img src="imgs/carousel1.png" style="width:100%">
-              <div class="text">
+                <img class="hide-765" src="imgs/carousel1.png" style="width:100%">
+                <img class="show-765" src="imgs/carousel1-sm.png" style="width:100%">
+              <div class="text hide-765">
                   <div></div>
                   <div>
                     <h2>Deals Unlocked</h2>
@@ -104,12 +106,25 @@
                             >
                         </div>
                     </button>
-                </div>
+                  </div>
+              </div>
+              <div class="show-765 footer-carousel-1">
+                <h2>Deals Unlocked</h2>
+                    <p>Score great deals on select Xbox games, Xbox Game Pass Ultimate, and more. Sale ends 6/17.</p>
+                    <button class="shop-now-button">
+                        <div class="shop-now-button-left">
+                            Shop now    
+                        </div>
+                        <div class="shop-now-button-right">
+                            >
+                        </div>
+                    </button>
               </div>
             </div>
             <div class="mySlides fade carousel-img-2">
-              <img src="imgs/carousel2.png" style="width:100%">
-              <div class="text">
+              <img class="hide-765" src="imgs/carousel2.png" style="width:100%">
+              <img class="show-765" src="imgs/carousel2-sm.png" style="width:100%">
+              <div class="text hide-765">
                 <div class="first">
                   <h2>Save $550</h2>
                   <p>Stand out from the ordinary and save on select Surface Pro 7 with Intel i5 + Type Cover + Surface Pen</p>
@@ -124,6 +139,18 @@
                 </div>
                 <div></div>
               </div>
+              <div class="show-765 footer-carousel-2">
+                <h2>Save $550</h2>
+                <p>Stand out from the ordinary and save on select Surface Pro 7 with Intel i5 + Type Cover + Surface Pen</p>
+                <button class="shop-now-button shop-now-button-dark">
+                    <div class="shop-now-button-left">
+                        Shop now    
+                    </div>
+                    <div class="shop-now-button-right">
+                        >
+                    </div>
+                </button>
+              </div>
             </div>
             <div class="prev" onclick="plusSlides(-1)">
                 <a>&#10094;</a>
@@ -133,7 +160,15 @@
             </div>
             <div class="dots">
                 <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="pause-group">
+                    <i class="fas fa-pause icon-pause" onclick="pauseCarousel()"></i>
+                    <span class="pausebox pause-carousel">Pause</span>
+                </span>
+                <span class="play-group">
+                    <i class="fas fa-play icon-pause icon-play" onclick="resumeCarousel()"></i>
+                    <span class="pausebox pause-carousel play-carousel">Play</span>
+                </span>
             </div>
         </div>
     </section>
