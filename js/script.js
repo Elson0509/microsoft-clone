@@ -81,3 +81,39 @@ const resumeCarousel = _ =>{
   pauseGroup[0].style.display = 'inline'
   playGroup[0].style.display = 'none'
 }
+
+const endListProducts = _ => {
+  const listProducts = document.getElementsByClassName('list-products')
+  const prevProducts = document.getElementsByClassName("prev-products")
+  const nextProducts = document.getElementsByClassName("next-products")
+  prevProducts[0].style.visibility = 'visible'
+  nextProducts[0].style.visibility = 'hidden'
+  listProducts[0].style.left=`${-1 * (1100 - window.innerWidth)}px`
+}
+
+const beginListProducts = _ => {
+  const listProducts = document.getElementsByClassName('list-products')
+  const prevProducts = document.getElementsByClassName("prev-products")
+  const nextProducts = document.getElementsByClassName("next-products")
+  prevProducts[0].style.visibility = 'hidden'
+  nextProducts[0].style.visibility = 'visible'
+  listProducts[0].style.left='0px'
+}
+
+window.onresize = _ =>{
+  const prevProducts = document.getElementsByClassName("prev-products")
+  const nextProducts = document.getElementsByClassName("next-products")
+  const listProducts = document.getElementsByClassName('list-products')
+  if(window.innerWidth>1180){
+    listProducts[0].style.justifyContent='center'
+    prevProducts[0].style.visibility = 'hidden'
+    nextProducts[0].style.visibility = 'hidden'
+  }
+  else{
+    if(listProducts[0].style.justifyContent=='center'){
+      nextProducts[0].style.visibility = 'visible'
+      listProducts[0].style.justifyContent='flex-start'
+    }
+  }
+}
+
