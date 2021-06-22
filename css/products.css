@@ -82,3 +82,25 @@
     top: 12px;
     left: 18px;
 }
+
+.list-products-sm{
+    margin-top: 40px;
+}
+
+.list-products-sm li{
+    list-style: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.list-products-sm li:hover p{
+    text-decoration: underline;
+}
+
+.list-products-sm p{
+    display: inline;
+}
+
+.list-products-sm img{
+    height: 20px;
+}

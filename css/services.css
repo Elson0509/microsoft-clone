@@ -1,0 +1,32 @@
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 1082px) {
+    .services{
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .services{
+        grid-template-columns: 1fr;
+        margin: 50px auto;
+    }
+}
+
+.service img{
+    height: auto;
+    width: 100%;
+}
+
+.service h2{
+    font-weight: 400;
+    font-size: 1.3rem;
+}

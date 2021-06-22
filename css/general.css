@@ -10,3 +10,32 @@ body{
         width: 100%;
     }
 }
+
+.link-arrow-animated{
+    cursor: pointer;
+    transition: all .3s;
+    margin-bottom: 10px;
+    color: blue !important;
+}
+
+.link-arrow-animated a{
+    text-decoration: none;
+}
+
+.link-arrow-animated-left{
+    display: inline;
+    margin-right: 0px;
+    transition: all .3s;
+}
+
+.link-arrow-animated-right{
+    display: inline;
+    margin-left: 0px;
+    transition: all .3s;
+}
+
+.link-arrow-animated:hover .link-arrow-animated-left{
+    margin-right: 5px;
+    transition: all .3s;
+    border-bottom: 2px solid blue;
+}
