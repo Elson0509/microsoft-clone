@@ -1,0 +1,33 @@
+.design-lab{
+    position: relative;
+}
+
+.design-lab .text{
+    color: #f2f2f2;
+    font-size: 15px;
+    position: absolute;
+    top:0;
+    left:4%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.design-lab .shop-now-button{
+    width: 150px;
+    grid-template-columns: 90px 30px;
+}
+
+.footer-design-lab{
+    text-align: center;
+    padding: 100px;
+    background: #444;
+    margin-top: -5px;
+    color: white;
+}
+  
+.footer-design-lab button{
+    margin: 0 auto;
+}
