@@ -1,0 +1,53 @@
+.social{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    
+    align-items: center;
+}
+
+.social h3{
+    display: inline;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    font-weight: 100;
+    
+}
+
+.social i{
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.fa-facebook-square{
+    color:#3B5998;
+}
+
+.fa-facebook-square:hover{
+    color:#2B4988;
+}
+
+.fa-twitter-square{
+    color:#1DA1F2;
+}
+
+.fa-twitter-square:hover{
+    color:#0D91E2;
+}
+
+.fa-youtube-square{
+    color:#FF0000;
+}
+
+.fa-youtube-square:hover{
+    color:#DF0000;
+}
+
+.fa-instagram-square{
+    color: #405DE6;
+}
+
+.fa-instagram-square:hover{
+    color: #304DD6;
+}

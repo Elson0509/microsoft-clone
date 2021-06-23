@@ -1,0 +1,19 @@
+.response{
+    background: #e6e6e6;
+    padding: 15px;
+    text-align: center;
+    color: black;
+    margin-top: 15px;
+}
+
+.response .link-arrow-animated{
+    color: black !important;
+}
+
+.response .link-arrow-animated a{
+    color: black !important;
+}
+
+.response .link-arrow-animated:hover .link-arrow-animated-left{
+    border-bottom: 2px solid black;
+}
