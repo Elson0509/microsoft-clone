@@ -1,0 +1,13 @@
+.business{
+    margin-top: 30px;
+}
+
+.business h1{
+    font-weight: 500;
+    width: 90%;
+    margin: 15px auto;
+}
+
+.business .services{
+    margin-top: 0px;
+}
