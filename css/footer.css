@@ -1,0 +1,18 @@
+footer{
+    background: #e6e6e6;
+}
+
+.footer-columns{
+    display:grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 15px;
+    
+}
+
+.footer-columns ul{
+    padding: 0;
+}
+
+.footer-columns li{
+    list-style: none;
+}
