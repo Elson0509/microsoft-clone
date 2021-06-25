@@ -1,12 +1,33 @@
 footer{
-    background: #e6e6e6;
+    background: #f2f2f2;
+    padding: 30px 60px;
+    margin-top: 30px;
+}
+
+footer ul{
+    padding: 0;
 }
 
 .footer-columns{
     display:grid;
     grid-template-columns: repeat(6, auto);
     gap: 15px;
-    
+}
+
+@media only screen and (max-width: 1082px) {
+    .footer-columns{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .footer-columns{
+        display:block;
+    }
+
+    .footer-columns div{
+        margin-top: 50px;
+    }
 }
 
 .footer-columns ul{
@@ -15,4 +36,52 @@ footer{
 
 .footer-columns li{
     list-style: none;
+    margin-top: 10px;
+}
+
+footer h3{
+    font-size: 1rem;
+    color: #777;
+}
+
+footer a{
+    text-decoration: none;
+    color: #555;
+    font-size: 0.7rem;
+    white-space: nowrap;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.terms{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 766px) {
+    .terms{
+        display: block;
+    }
+}
+
+.terms p{
+    text-decoration: none;
+    color: #555;
+    font-size: 0.7rem;
+    display: inline;
+    white-space: nowrap;
+}
+
+.terms li{
+    display: inline;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.terms li:first-child{
+    margin-left: 0px;
 }
