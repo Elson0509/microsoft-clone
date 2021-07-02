@@ -1,3 +1,48 @@
+const windows = [
+  'subnav-all-products',
+  'subnav-more',
+  'subnav-more-sm',
+]
+
+const isOpenWindows = []
+
+windows.forEach(el => {
+  isOpenWindows[el] = false
+})
+
+const closeAllMenus = _ => {
+  //close each menu window
+  windows.forEach(win => {
+      const el = document.getElementById(win)
+      el.style.display='none'
+      isOpenWindows[win] = false
+  })
+}
+
+const openMenu = (id) => {
+  //iterating windows by windows to check which one was invoked
+  windows.forEach(win => {
+      const el = document.getElementById(win)
+      const elTrigger = document.getElementById(win+'-handler')
+      if(id===win){
+          //if that window has been invoked, show it
+          el.style.display=isOpenWindows[id] ? 'none' : 'block'
+          elTrigger.style.background=isOpenWindows[id] ? 'white' : '#ededed'
+          //set true to its window flag
+          isOpenWindows[id] = !isOpenWindows[id]
+          
+      }
+      else{
+          //if that window has not been invoked, close it
+          el.style.display='none'
+          //set true to its window flag
+          isOpenWindows[win] = false
+      }
+  })
+}
+
+
+
 const closeLearn = _ =>{
     const learnClose = document.getElementById('learn_close')
     learnClose.style.display = 'none'
@@ -114,6 +159,14 @@ window.onresize = _ =>{
       nextProducts[0].style.visibility = 'visible'
       listProducts[0].style.justifyContent='flex-start'
     }
+  }
+
+  //handling menu windows
+  if(isOpenWindows['subnav-more'] && (window.innerWidth>944 || window.innerWidth<865)){
+    closeAllMenus()
+  }
+  if(isOpenWindows['subnav-more-sm'] && (window.innerWidth>864 || window.innerWidth<859)){
+    closeAllMenus()
   }
 }
 

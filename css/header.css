@@ -52,3 +52,86 @@ header li:active{
         margin: 0 auto;
     }
 }
+
+.subnav{
+    position: absolute;
+    background: #eee;
+    right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    top: 108px;
+    z-index: 10;
+    border-bottom: 1px solid black;
+    display: none;
+}
+
+.subnav ul{
+    margin: 0;
+    display: block;
+}
+
+.subnav ul li{
+    display: block;
+}
+
+.subnav ul li h3{
+    display: block;
+    font-size: 0.8rem;
+}
+
+.colunms-subnav{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 20px;
+    padding: 20px;
+}
+
+.subnav-more{
+    position: absolute;
+    background: #eee;
+    min-width: 120px;
+    z-index: 10;
+    top: 105px;
+    left: 492px;
+    border-bottom: 1px solid black;
+    display: none;
+}
+
+.subnav-more-sm{
+    left: 442px;
+}
+
+.subnav-more ul{
+    display: block;
+}
+.subnav-more li{
+    display: block;
+}
+
+@media only screen and (max-width: 1228px) {
+    .colunms-subnav{
+        grid-template-columns: repeat(5, auto);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .colunms-subnav{
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+@media only screen and (max-width: 856px) {
+    .colunms-subnav{
+        display: none;
+    }
+}
+
+.footer-subnav{
+    text-align: center;
+    background: #ddd;
+    padding: 8px;
+}
+
+.footer-subnav a:hover{
+    border-bottom: 1px solid black;
+
+}
