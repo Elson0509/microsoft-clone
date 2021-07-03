@@ -58,7 +58,7 @@ header li:active{
     background: #eee;
     right: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    top: 108px;
+    top: 105px;
     z-index: 10;
     border-bottom: 1px solid black;
     display: none;
@@ -90,7 +90,7 @@ header li:active{
     background: #eee;
     min-width: 120px;
     z-index: 10;
-    top: 105px;
+    top: 103px;
     left: 492px;
     border-bottom: 1px solid black;
     display: none;
@@ -105,6 +105,37 @@ header li:active{
 }
 .subnav-more li{
     display: block;
+}
+
+.subnav-hamburguer{
+    position: absolute;
+    background: #eee;
+    z-index: 10;
+    top: 105px;
+    left: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: none;
+}
+
+.subnav-hamburguer ul{
+    display: block;
+}
+.subnav-hamburguer li{
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.subnav-hamburguer a{
+    font-size: .9rem;
+}
+
+.subnav-hamburguer li:active{
+    border: 1px dashed black;
+}
+
+.subnav-hamburguer:hover a{
+    border-bottom: none;
 }
 
 @media only screen and (max-width: 1228px) {

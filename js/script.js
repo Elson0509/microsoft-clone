@@ -2,6 +2,7 @@ const windows = [
   'subnav-all-products',
   'subnav-more',
   'subnav-more-sm',
+  'subnav-hamburguer',
 ]
 
 const isOpenWindows = []
@@ -39,9 +40,14 @@ const openMenu = (id) => {
           isOpenWindows[win] = false
       }
   })
+  updateIcons()
 }
 
-
+const updateIcons = _ => {
+  const hamburguerIcon = document.getElementById("subnav-hamburguer-handler")
+  hamburguerIcon.innerHTML = isOpenWindows['subnav-hamburguer'] ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>'
+  hamburguerIcon.style.background='white'
+}
 
 const closeLearn = _ =>{
     const learnClose = document.getElementById('learn_close')
@@ -162,11 +168,18 @@ window.onresize = _ =>{
   }
 
   //handling menu windows
+  if(isOpenWindows['subnav-all-products'] && (window.innerWidth<859)){
+    closeAllMenus()
+  }
   if(isOpenWindows['subnav-more'] && (window.innerWidth>944 || window.innerWidth<865)){
     closeAllMenus()
   }
   if(isOpenWindows['subnav-more-sm'] && (window.innerWidth>864 || window.innerWidth<859)){
     closeAllMenus()
   }
+  if(isOpenWindows['subnav-hamburguer'] && (window.innerWidth>859)){
+    closeAllMenus()
+  }
+  updateIcons()
 }
 
