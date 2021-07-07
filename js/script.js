@@ -183,3 +183,12 @@ window.onresize = _ =>{
   updateIcons()
 }
 
+const submenus = document.querySelectorAll('.submenu')
+Array.from(submenus).forEach(submenu => {
+  submenu.addEventListener('click', (ev)=>{
+    submenu.children.item(1).style.display = submenu.children.item(1).style.display == 'block' ? 'none' : 'block'
+    submenu.children.item(0).children.item(1).className = submenu.children.item(0).children.item(1).className == 'fas fa-chevron-up' ? 'fas fa-chevron-down' : 'fas fa-chevron-up'
+  })
+}, true)
+
+
