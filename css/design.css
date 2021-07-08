@@ -1,5 +1,6 @@
 .design-lab{
     position: relative;
+    cursor: pointer;
 }
 
 .design-lab .text{
@@ -7,12 +8,16 @@
     font-size: 15px;
     position: absolute;
     top:0;
-    left:4%;
+    left:0;
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
+}
+
+.design-lab-first{
+    padding: 30px;
 }
 
 .design-lab .shop-now-button{
